@@ -3,14 +3,16 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/concrete_seamless.jfif");
+
+
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* general */
+
 
 .container {
   width: 100%;
@@ -50,14 +52,13 @@ h3 {
   font-size: 22px;
 }
 
-/* header */
 
 #masthead {
-  position: fixed;
+  position: static;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
-  overflow: auto;
+  /*overflow: auto;*/
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
@@ -96,7 +97,6 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-/* footer */
 
 footer {
   padding: 30px 0;
@@ -109,7 +109,6 @@ footer {
   border-top: 8px solid #4aaaa5;
 }
 
-/* sidebar */
 
 .sidebar {
   float: right;
@@ -143,7 +142,8 @@ h3,
 /* main */
 
 #main-container {
-  padding-top: 130px;
+  /*padding-top: 130px;*/
+  padding-top: 30px;
 }
 
 .main-section {
@@ -163,7 +163,8 @@ h3,
   float: left;
   width: 274px;
   margin: 20px 0 25px;
-  overflow: auto;
+  border: 2px solid gray;
+  /*overflow: auto;*/
 }
 
 .work:nth-child(even) {
@@ -171,7 +172,8 @@ h3,
 }
 
 .work img {
-  width: 100%;
+  width: 60%;
+  margin-left: 50px;
   border: 0 none;
   opacity: 0.8;
 }
@@ -236,4 +238,116 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+
+   .container {
+    max-width: 960px;
+  }
+
+  .auth-image {
+    width: 200px;
+    height: auto;
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  .main-section {
+    max-width: 450px;
+    margin-left: 30px;
+  }
+
+  #logo {
+    margin-left: 30px;
+  }
+
+  nav {
+    margin-right: 40px;
+  }
+
+   .sidebar {
+    margin-right: 20px;
+    max-width: 270px;
+  }
+
+  .work {
+    margin-left: 80px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+
+ .main-section {
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  nav {
+    margin-right: 40px;
+  }
+
+   .sidebar {
+    margin-right: 10px;
+    max-width: 700px;
+  }
+
+  .work {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+
+   .auth-image {
+    width: 200px;
+    height: auto;
+    margin-left: 150px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+  }
+
+  .main-section {
+    max-width: 580px;
+    margin-left: 20px;
+  }
+
+  #logo {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  nav {
+    margin-right: 180px;
+  }
+
+   .sidebar {
+    margin-right: 20px;
+    max-width: 580px;
+  }
+
+  .work {
+    margin-left: 80px;
+  }
 }
